@@ -1,0 +1,53 @@
+.header{
+                position: fixed;
+                height: 50px;
+                left: 0;
+                right: 0;
+                top: 0;
+                border: 1px solid white;
+                border-radius: 3px;
+                margin: 3px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                background-color:  #009999; 
+                color: white;            
+                
+                
+            }
+            .user-profile{
+                border: 1px solid white;
+                text-align: center;
+                }
+            .rightflex{
+                right: 0;
+                display: flex;
+                justify-content: space-between;
+                
+                }
+            .leftflex{
+                margin-left: 50px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+
+            }
+            .user-profile{
+                display: flex;
+                height: 40px;
+                width: 40px;
+                border: 1px solid red;
+                border-radius: 25px;
+                align-items: center;
+                justify-content: center;
+                margin-right: 20px;
+                margin-left: 20px;
+
+            }
+            .user-name{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            
