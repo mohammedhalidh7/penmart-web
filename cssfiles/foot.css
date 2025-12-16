@@ -1,0 +1,73 @@
+.backfoot{
+    position: fixed;
+    height: 50px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 0;
+    left: 0;
+    right: 0; 
+    border-top: 0.5px dotted gray;   
+}
+.footdiv{
+    display: flex;
+    border: 0;
+    height: 90%;
+    border-radius: 3px;
+    flex: 1;
+    justify-content: space-between;
+    background-color: white;
+}
+.cartdiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cartbut{
+    height:70%;
+    width: max-content;
+    background-color:#049f04;
+    color: white;
+    margin: 2px;
+    font-size: 20px;
+    border: 0;
+    border-radius: 4px;
+    box-shadow: 1px 1px 5px black;
+    padding-left: 7px;
+    padding-right: 7px;
+    margin-left: 10px;
+}
+.totaldiv{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 0;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 3px;
+}
+.total{
+    margin-right: 10px;
+    font-weight: 700;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+.footbn{
+    background-color: rgb(225, 174, 5);
+    border: 0;
+    border-radius:20px;
+    color:black;
+    font-size:20px;
+    height: 30px;
+    box-shadow: 1px 1px 7px black;
+
+    
+}
+
+/* #99ffff
+#9cecd8
+
+ */
+ /* view cart #048989; */
+ /* footbn  #026161; */
