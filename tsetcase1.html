@@ -1,16 +1,67 @@
 <!DOCTYPE html>
-<html>
-    <head>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Add to Cart Example</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+    .product {
+      margin-bottom: 10px;
+    }
+    .cart {
+      margin-top: 20px;
+      border-top: 2px solid #333;
+      padding-top: 10px;
+    }
+  </style>
+</head>
+<body>
 
-    </head>
-    <body>
-        <div class="">
-            <p>
-                relative div
-            </p>
+  <h2>Products</h2>
 
-        </div>
-        
+  <div class="product">
+    <span>Apple - $1</span>
+    <button onclick="addToCart('Apple')">Add to Cart</button>
+  </div>
 
-    </body>
+  <div class="product">
+    <span>Banana - $0.50</span>
+    <button onclick="addToCart('Banana')">Add to Cart</button>
+  </div>
+
+  <div class="product">
+    <span>Orange - $0.80</span>
+    <button onclick="addToCart('Orange')">Add to Cart</button>
+  </div>
+
+  <div class="cart">
+    <h3>Cart Items:</h3>
+    <ul id="cartList"></ul>
+  </div>
+
+  <script>
+    // Cart array
+    let cart = [];
+
+    function addToCart(item) {
+      cart.push(item);
+      displayCart();
+    }
+
+    function displayCart() {
+      const cartList = document.getElementById("cartList");
+      cartList.innerHTML = "";
+
+      cart.forEach((item) => {
+        const li = document.createElement("li");
+        li.textContent = item;
+        cartList.appendChild(li);
+      });
+    }
+  </script>
+
+</body>
 </html>
