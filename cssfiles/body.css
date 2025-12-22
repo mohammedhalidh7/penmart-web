@@ -1,9 +1,10 @@
 body{
     padding-top: 65px;
-    padding-left: 70px;
-    padding-right:0;
+    padding-left: 10px;
+    padding-right:10px;
     background-color:white;
     padding-bottom: 65px;
+    position: relative;
      
     }
 .product-grid{
@@ -15,7 +16,7 @@ body{
 
 }
 .product-div{
-    min-width: 98px;
+    min-width: 100px;
     height: max-content;
     min-height: 300px;
     border: 0;
@@ -40,7 +41,7 @@ body{
     display: block;
 }
 .addbut{
-    background-color: white;
+    background: transparent;
     color:#00cc00;
     border: 1px solid #00cc00;
     font-size: 20px;
@@ -54,7 +55,7 @@ body{
 .buynowbut{
     background-color:rgb(234, 179, 0);
     color :black;
-    border: 1px solid rgb(180, 177, 177); 
+    border: 0;
     font-size: 20px;
     border-radius: 13px;
     display: block;
@@ -94,6 +95,52 @@ body{
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     }
 }
+.edit-cont{
+    position: absolute;
+    width: 85px;
+    height: 70px;
+    border: 1px solid rgb(182, 178, 178);
+    border-radius: 4px;
+    left: 0;
+    top:45px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    align-items: center;
+    box-shadow: 0px 0px 5px black;
+    opacity: 0;
+}
+.filter-cont{
+    position: absolute;
+
+}
+.for-buttom{
+    width: 100%;
+
+}
+.ebut1{
+    background-color:  rgb(9, 9, 119);
+    border: 0;
+    color: white;
+    border-radius: 3px;
+    height:25px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    box-shadow: inset 0px 0px 5px gray,0px 0px 5px gray;
+    width: 100%;
+}
+.ebut2{
+    background-color: red;
+    border: 0;
+    color: white;
+    border-radius: 3px;
+    font-size: 14px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    box-shadow: 0px 0px 5px black;
+
+    
+}
+
 /* }buynow #026161*/
 /*  add to card #048989*/
 /* product-div  #009999;*/
