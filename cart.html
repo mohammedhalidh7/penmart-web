@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PenMart Cart</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../css/cart.css">
+</head>
+<body>
+
+<div class="page-container">
+
+    <div class="cart-card">
+
+        <h2>Your Cart</h2>
+
+        <!-- Cart items will be added here -->
+        <div id="cart-items"></div>
+
+        <hr>
+
+        <!-- Total -->
+        <div class="total-row">
+            <span>Total</span>
+            <span>₹<span id="total-price">0</span></span>
+        </div>
+
+        <!-- Checkout -->
+        <button class="checkout-btn" onclick="goToCheckout()">
+            Proceed to Checkout
+        </button>
+
+    </div>
+
+</div>
+
+<script src="../js/cart.js"></script>
+</body>
+</html>
