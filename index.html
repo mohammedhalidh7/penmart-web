@@ -9,7 +9,72 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link h.ref="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<script>
+let i=0
+let isChanged = false;
+let countr=0;
+
+function add1() {
+    let div = document.getElementById("a1");
+    
+
+    if (!isChanged) {
+        countr=countr+1;
+        // change border
+        div.style.borderColor = "#00cc00";
+        div.style.borderWidth = "2px";
+        isChanged = true;
+        document.getElementById("addd1").innerText="remove from cart";
+        document.getElementById("addd1").style.color="white";
+        document.getElementById("addd1").style.backgroundColor="red";
+        document.getElementById("addd1").style.border="0";
+
+
+
+    } else {
+        // back to original
+        div.style.borderColor = "rgb(214,216,214)";
+        div.style.borderWidth = "1px";
+        document.getElementById("addd1").innerText="+add to card";
+        document.getElementById("addd1").style.color="#00cc00";
+        document.getElementById("addd1").style.backgroundColor="white";
+        document.getElementById("addd1").style.border="1px";
+        isChanged = false;
+    }
+}
+function add2() {
+    let div = document.getElementById("a2");
+    
+
+    if (!isChanged) {
+        countr=countr+1;
+        // change border
+        div.style.borderColor = "#00cc00";
+        div.style.borderWidth = "2px";
+        isChanged = true;
+        document.getElementById("addd2").innerText="remove from cart";
+        document.getElementById("addd2").style.color="white";
+        document.getElementById("addd2").style.backgroundColor="red";
+        document.getElementById("addd2").style.border="0";
+
+
+
+    } else {
+        // back to original
+        div.style.borderColor = "rgb(214,216,214)";
+        div.style.borderWidth = "1px";
+        document.getElementById("addd2").innerText="+add to card";
+        document.getElementById("addd2").style.color="#00cc00";
+        document.getElementById("addd2").style.backgroundColor="white";
+        document.getElementById("addd2").style.border="1px";
+        document.getElementById("addd2").style.borderColor="green";
+        isChanged = false;
+    }
+}
+
+
+</script>
     </head>
     <body>
         <div class="header">
@@ -110,94 +175,79 @@
 </div>
 
 <div class="product-grid">
-    <div class="product-div">
+    <div class="product-div" id="a1">
         <div class="product-picdiv">
             <img class="product-pic" src="photos/IMG_20230210_191543_495.jpg">
         </div>
     <div class="product-details">
-        <p class="product-name">NAME</p>
-        <P class="product-price">PRICE</P>
+        <p class="product-name">NAME1</p>
+        <P class="product-price">PRICE1</P>
     </div>
     <div class="order-div">
-        <button class="addbut">+add to card</button>
+        <button onclick="add1()" class="addbut" id="addd1">+add to card</button>
         <button class="buynowbut">buy now</button>
     </div>
 </div>
 
-                <div class="product-div">
-                <div class="product-picdiv">
-                    <img class="product-pic" src="photos/IMG_20230210_191543_495.jpg">
+    <div class="product-div" id="a2">
+        <div class="product-picdiv">
+                <img class="product-pic" src="photos/IMG_20230210_191543_495.jpg">
 
-                </div>
-                <div class="product-details">
-                    <p class="product-name">NAME</p>
-                    <P class="product-price">PRICE</P>
+            </div>
+            <div class="product-details">
+                <p class="product-name">NAME2</p>
+                <P class="product-price">PRICE2</P>
 
-                </div>
+        </div>
                 <div class="order-div">
-                    <button class="addbut">+add to card</button>
+                    <button onclick="add2()" id="addd2" class="addbut">+add to card</button>
                     <button class="buynowbut">buy now</button>
 
                 </div>
                 </div>
-                <div class="product-div">
+                <div class="product-div" id="a3">
                 <div class="product-picdiv">
                     <img class="product-pic" src="photos/IMG_20230210_191543_495.jpg">
 
                 </div>
                 <div class="product-details">
-                    <p class="product-name">NAME</p>
-                    <P class="product-price">PRICE</P>
+                    <p class="product-name">NAME3</p>
+                    <P class="product-price">PRICE3</P>
 
                 </div>
                 <div class="order-div">
-                    <button class="addbut">+add to card</button>
+                    <button onclick="add3()" id="addd3" class="addbut">+add to card</button>
                     <button class="buynowbut">buy now</button>
 
                 </div>
-                </div><div class="product-div">
+                </div><div class="product-div" id="a4">
                 <div class="product-picdiv">
                     <img class="product-pic" src="photos/IMG_20230210_191543_495.jpg">
 
                 </div>
                 <div class="product-details">
-                    <p class="product-name">NAME</p>
-                    <P class="product-price">PRICE</P>
+                    <p class="product-name">NAME4</p>
+                    <P class="product-price">PRICE4</P>
 
                 </div>
                 <div class="order-div">
-                    <button class="addbut">+add to card</button>
+                    <button onclick="add4()" id="addd4" class="addbut">+add to card</button>
                     <button class="buynowbut">buy now</button>
 
                 </div>
                 </div>
-                <div class="product-div">
+                <div class="product-div" id="a5">
                 <div class="product-picdiv">
                     <img class="product-pic" src="photos/IMG_20230210_191543_495.jpg">
 
                 </div>
                 <div class="product-details">
-                    <p class="product-name">NAME</p>
-                    <P class="product-price">PRICE</P>
+                    <p class="product-name">NAME5</p>
+                    <P class="product-price">PRICE5</P>
 
                 </div>
                 <div class="order-div">
-                    <button class="addbut">+add to card</button>
-                    <button class="buynowbut">buy now</button>
-
-                </div>
-                </div><div class="product-div">
-                <div class="product-picdiv">
-                    <img class="product-pic" src="photos/IMG_20230210_191543_495.jpg">
-
-                </div>
-                <div class="product-details">
-                    <p class="product-name">NAME</p>
-                    <P class="product-price">PRICE</P>
-
-                </div>
-                <div class="order-div">
-                    <button class="addbut">+add to card</button>
+                    <button onclick="add5()" id="addd5" class="addbut">+add to card</button>
                     <button class="buynowbut">buy now</button>
 
                 </div>
@@ -206,13 +256,13 @@
                     <img class="product-pic" src="photos/IMG_20230210_191543_495.jpg">
 
                 </div>
-                <div class="product-details">
-                    <p class="product-name">NAME</p>
-                    <P class="product-price">PRICE</P>
+                <div class="product-details" id="a6">
+                    <p class="product-name">NAME6</p>
+                    <P class="product-price">PRICE6</P>
 
                 </div>
                 <div class="order-div">
-                    <button class="addbut">+add to card</button>
+                    <button onclick="add6()" id="addd6" class="addbut">+add to card</button>
                     <button class="buynowbut">buy now</button>
 
                 </div>
@@ -221,73 +271,91 @@
                     <img class="product-pic" src="photos/IMG_20230210_191543_495.jpg">
 
                 </div>
-                <div class="product-details">
-                    <p class="product-name">NAME</p>
-                    <P class="product-price">PRICE</P>
+                <div class="product-details" id="a7">
+                    <p class="product-name">NAME7</p>
+                    <P class="product-price">PRICE7</P>
 
                 </div>
                 <div class="order-div">
-                    <button class="addbut">+add to card</button>
+                    <button onclick="add7()" id="addd7" class="addbut">+add to card</button>
                     <button class="buynowbut">buy now</button>
 
                 </div>
-                </div><div class="product-div">
+                </div><div class="product-div" id="a8">
                 <div class="product-picdiv">
                     <img class="product-pic" src="photos/IMG_20230210_191543_495.jpg">
 
                 </div>
                 <div class="product-details">
-                    <p class="product-name">NAME</p>
-                    <P class="product-price">PRICE</P>
+                    <p class="product-name">NAME8</p>
+                    <P class="product-price">PRICE8</P>
 
                 </div>
                 <div class="order-div">
-                    <button class="addbut">+add to card</button>
+                    <button onclick="add8()" id="addd8" class="addbut">+add to card</button>
                     <button class="buynowbut">buy now</button>
 
                 </div>
-                </div><div class="product-div">
+                </div>
+                <div class="product-div" id="a9">
                 <div class="product-picdiv">
                     <img class="product-pic" src="photos/IMG_20230210_191543_495.jpg">
 
                 </div>
                 <div class="product-details">
-                    <p class="product-name">NAME</p>
-                    <P class="product-price">PRICE</P>
+                    <p class="product-name">NAME9</p>
+                    <P class="product-price">PRICE9</P>
 
                 </div>
                 <div class="order-div">
-                    <button class="addbut">+add to card</button>
+                    <button onclick="add9()" id="addd9" class="addbut">+add to card</button>
                     <button class="buynowbut">buy now</button>
 
                 </div>
-                </div><div class="product-div">
+                </div>
+                <div class="product-div" id="a10">
                 <div class="product-picdiv">
                     <img class="product-pic" src="photos/IMG_20230210_191543_495.jpg">
 
                 </div>
                 <div class="product-details">
-                    <p class="product-name">NAME</p>
+                    <p class="product-name">NAME10</p>
+                    <P class="product-price">PRICE10</P>
+
+                </div>
+                <div class="order-div">
+                    <button onclick="add10()" id="addd10" class="addbut">+add to card</button>
+                    <button class="buynowbut">buy now</button>
+
+                </div>
+                </div><div class="product-div" id="a11">
+                <div class="product-picdiv">
+                    <img class="product-pic" src="photos/IMG_20230210_191543_495.jpg">
+
+                </div>
+                <div  class="product-details">
+                    <p class="product-name">NAME11</p>
                     <P class="product-price">PRICE</P>
 
                 </div>
                 <div class="order-div">
-                    <button class="addbut">+add to card</button>
+                    <button onclick="add11()" id="addd11" class="addbut">+add to card</button>
                     <button class="buynowbut">buy now</button>
 
                 </div>
-                </div><div class="product-div">
+                </div>
+                <div class="product-div" id="a12">
                 <div class="product-picdiv">
                     <img class="product-pic" src="photos/IMG_20230210_191543_495.jpg">
 
                 </div>
                 <div class="product-details">
-                    <p class="product-name">NAME</p>
+                    <p class="product-name">NAME12</p>
                     <P class="product-price">PRICE</P>
 
                 </div>
                 <div class="order-div">
-                    <button class="addbut">+add to card</button>
+                    <button onclick="add12()" id="addd12" class="addbut">+add to card</button>
                     <button class="buynowbut">buy now</button>
 
                 </div>
