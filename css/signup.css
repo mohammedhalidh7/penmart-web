@@ -1,0 +1,99 @@
+/* =========================
+   GLOBAL RESET
+========================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* =========================
+   PAGE BACKGROUND
+========================= */
+body {
+    height: 100vh;
+    background-color: #f5f5f5;
+}
+
+/* =========================
+   CENTER CONTENT
+========================= */
+.page-container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* =========================
+   SIGN UP CARD
+========================= */
+.signup-box {
+    width: 380px;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 12px rgba(0,0,0,0.15);
+}
+
+/* =========================
+   HEADING
+========================= */
+.signup-box h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #e53900;   /* PenMart theme color */
+}
+
+/* =========================
+   FORM GROUP
+========================= */
+.form-group {
+    margin-bottom: 14px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #333;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: #e53900;
+}
+
+/* =========================
+   BUTTONS
+========================= */
+.btn {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 15px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+/* Sign up button */
+.signup-btn {
+    background-color: #e53900;
+    color: white;
+}
+
+/* Cancel button */
+.cancel-btn {
+    background-color: #b71c1c;
+    color: white;
+}
